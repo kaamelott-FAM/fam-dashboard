@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎁 FAM Clan - Chest Dashboard</title>
+    <title>🎁 FAM Clan - Dashboard Coffres</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -98,6 +98,21 @@
             border-bottom: 2px solid #444;
         }
         
+        .pts-row th {
+            background: #1a1a30;
+            font-size: 0.65em;
+            font-weight: normal;
+            color: #ffd700;
+            border-bottom: 2px solid #555;
+        }
+        
+        .pts-header {
+            background: #1a1a30;
+            color: #ffd700;
+            font-size: 0.65em;
+            font-weight: normal;
+        }
+        
         .player-name {
             text-align: left !important;
             padding-left: 8px !important;
@@ -160,25 +175,25 @@
 <body>
     <div class="container">
         <header>
-            <h1>🎁 <span>FAM</span> Chest Tracker</h1>
-            <p class="update-time">Updated: 2026-02-02 09:24</p>
-            <p class="update-time">🎯 Goal: <strong>50 chests</strong> + <strong>1000 points</strong></p>
+            <h1>🎁 <span>FAM</span> Clan Tracker</h1>
+            <p class="update-time">Mis à jour : 2026-02-02 09:36</p>
+            <p class="update-time">🎯 Objectif : <strong>50 coffres</strong> + <strong>1000 points</strong></p>
             
             <div class="stats-bar">
                 <div class="stat-item">
                     <div class="stat-value">628</div>
-                    <div class="stat-label">Chests</div>
+                    <div class="stat-label">Coffres</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value">9385</div>
                     <div class="stat-label">Points</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value">86</div>
-                    <div class="stat-label">Members</div>
+                    <div class="stat-value">85</div>
+                    <div class="stat-label">Membres</div>
                 </div>
                 <div class="stat-item red">
-                    <div class="stat-value">83</div>
+                    <div class="stat-value">82</div>
                     <div class="stat-label">🔴 0-49%</div>
                 </div>
                 <div class="stat-item orange">
@@ -196,18 +211,24 @@
             <table>
                 <thead>
                     <tr>
-                        <th class="cat-header" rowspan="2">Name</th>
-                        <th class="cat-header" rowspan="2">Pts</th>
-                        <th class="cat-header" rowspan="2">%</th>
-                        <th class="cat-header" rowspan="2">Tot</th>
-                        <th class="cat-header" colspan="5">Citadel</th><th class="cat-header" colspan="5">Crypt</th><th class="cat-header" colspan="5">EPIC Crypt</th><th class="cat-header" colspan="4">Heroic</th><th class="cat-header" colspan="1">Ragnarok</th><th class="cat-header" colspan="5">RARE Crypt</th><th class="cat-header" colspan="1">Special</th><th class="cat-header" colspan="6">Triumph</th><th class="cat-header" colspan="7">Vault</th><th class="cat-header" colspan="6">Tartarus</th><th class="cat-header" colspan="1">Surge</th><th class="cat-header" colspan="1">Arena</th><th class="cat-header" colspan="1">Clash</th><th class="cat-header" colspan="1">Dread Loot</th>
-                        <th class="cat-header" colspan="3">⚡ Power</th>
+                        <th class="cat-header" rowspan="3">Nom</th>
+                        <th class="cat-header" rowspan="3">Pts</th>
+                        <th class="cat-header" rowspan="3">%</th>
+                        <th class="cat-header" rowspan="3">Tot</th>
+                        <th class="cat-header" colspan="5">Citadelle</th><th class="cat-header" colspan="5">Crypte</th><th class="cat-header" colspan="5">Crypte ÉPIQUE</th><th class="cat-header" colspan="4">Héroïque</th><th class="cat-header" colspan="1">Ragnarok</th><th class="cat-header" colspan="5">Crypte RARE</th><th class="cat-header" colspan="1">Special</th><th class="cat-header" colspan="6">Triomphant</th><th class="cat-header" colspan="7">Chambre Forte</th><th class="cat-header" colspan="6">Tartare</th><th class="cat-header" colspan="1">Essor</th><th class="cat-header" colspan="1">Arène</th><th class="cat-header" colspan="1">Clash</th><th class="cat-header" colspan="1">Butin Éffroi</th>
+                        <th class="cat-header" colspan="3">⚡ Puissance</th>
                     </tr>
                     <tr>
                         <th class="level-header">10</th><th class="level-header">15</th><th class="level-header">20</th><th class="level-header">25</th><th class="level-header">30</th><th class="level-header">5</th><th class="level-header">10</th><th class="level-header">15</th><th class="level-header">20</th><th class="level-header">25</th><th class="level-header">15</th><th class="level-header">20</th><th class="level-header">25</th><th class="level-header">30</th><th class="level-header">35</th><th class="level-header">16-20</th><th class="level-header">21-25</th><th class="level-header">26-30</th><th class="level-header">31+</th><th class="level-header">-</th><th class="level-header">10</th><th class="level-header">15</th><th class="level-header">20</th><th class="level-header">25</th><th class="level-header">30</th><th class="level-header">-</th><th class="level-header">Bro</th><th class="level-header">Gol</th><th class="level-header">Mag</th><th class="level-header">Pre</th><th class="level-header">Sil</th><th class="level-header">Woo</th><th class="level-header">15</th><th class="level-header">20</th><th class="level-header">25</th><th class="level-header">30</th><th class="level-header">35</th><th class="level-header">40</th><th class="level-header">45</th><th class="level-header">10</th><th class="level-header">15</th><th class="level-header">20</th><th class="level-header">25</th><th class="level-header">30</th><th class="level-header">35</th><th class="level-header">-</th><th class="level-header">-</th><th class="level-header">-</th><th class="level-header">-</th>
-                        <th class="level-header">Current</th>
-                        <th class="level-header">Previous</th>
+                        <th class="level-header">Actuelle</th>
+                        <th class="level-header">Ancienne</th>
                         <th class="level-header">%</th>
+                    </tr>
+                    <tr class="pts-row">
+                        <th class="pts-header">10</th><th class="pts-header">15</th><th class="pts-header">30</th><th class="pts-header">40</th><th class="pts-header">60</th><th class="pts-header">5</th><th class="pts-header">10</th><th class="pts-header">15</th><th class="pts-header">30</th><th class="pts-header">40</th><th class="pts-header">15</th><th class="pts-header">30</th><th class="pts-header">40</th><th class="pts-header">60</th><th class="pts-header">80</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">10</th><th class="pts-header">15</th><th class="pts-header">30</th><th class="pts-header">40</th><th class="pts-header">60</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">15</th><th class="pts-header">30</th><th class="pts-header">40</th><th class="pts-header">60</th><th class="pts-header">80</th><th class="pts-header">-</th><th class="pts-header">80</th><th class="pts-header">10</th><th class="pts-header">15</th><th class="pts-header">30</th><th class="pts-header">40</th><th class="pts-header">60</th><th class="pts-header">80</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th><th class="pts-header">-</th>
+                        <th class="pts-header"></th>
+                        <th class="pts-header"></th>
+                        <th class="pts-header"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -268,7 +289,7 @@
                         <td class="col-pct-seuil">41%</td>
                         <td class="col-tot">21</td>
                         <td class="cell-zero">-</td><td class="cell-high">6</td><td class="cell-val">4</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-val">2</td><td class="cell-val">3</td><td class="cell-val">1</td><td class="cell-val">2</td><td class="cell-val">1</td><td class="cell-val">1</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-val">1</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td>
-                        <td class="col-power">57 755 051</td>
+                        <td class="col-power">57 770 651</td>
                         <td class="col-anc-power">57 733 051</td>
                         <td class="col-pct positive">+0.0%</td>
                     </tr>
@@ -328,7 +349,7 @@
                         <td class="col-pct-seuil">0%</td>
                         <td class="col-tot">0</td>
                         <td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td>
-                        <td class="col-power">10 280 955</td>
+                        <td class="col-power">10 281 965</td>
                         <td class="col-anc-power">10 280 955</td>
                         <td class="col-pct neutral">0%</td>
                     </tr>
@@ -358,9 +379,9 @@
                         <td class="col-pct-seuil">12%</td>
                         <td class="col-tot">9</td>
                         <td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-val">4</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-val">4</td><td class="cell-zero">-</td>
-                        <td class="col-power">147 037 875</td>
+                        <td class="col-power">147 567 875</td>
                         <td class="col-anc-power">147 032 275</td>
-                        <td class="col-pct neutral">0%</td>
+                        <td class="col-pct positive">+0.4%</td>
                     </tr>
                     <tr class="status-red">
                         <td class="player-name">Bonara</td>
@@ -448,9 +469,9 @@
                         <td class="col-pct-seuil">0%</td>
                         <td class="col-tot">0</td>
                         <td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td>
-                        <td class="col-power">230 514 225</td>
+                        <td class="col-power">230 799 225</td>
                         <td class="col-anc-power">230 506 225</td>
-                        <td class="col-pct neutral">0%</td>
+                        <td class="col-pct positive">+0.1%</td>
                     </tr>
                     <tr class="status-red">
                         <td class="player-name">DirtRacer82</td>
@@ -458,7 +479,7 @@
                         <td class="col-pct-seuil">2%</td>
                         <td class="col-tot">5</td>
                         <td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-high">5</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td>
-                        <td class="col-power">683 189</td>
+                        <td class="col-power">684 769</td>
                         <td class="col-anc-power">683 189</td>
                         <td class="col-pct neutral">0%</td>
                     </tr>
@@ -550,16 +571,6 @@
                         <td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td>
                         <td class="col-power">340 025 845</td>
                         <td class="col-anc-power">340 025 845</td>
-                        <td class="col-pct neutral">0%</td>
-                    </tr>
-                    <tr class="status-red">
-                        <td class="player-name">FAM</td>
-                        <td class="col-pts">0</td>
-                        <td class="col-pct-seuil">0%</td>
-                        <td class="col-tot">0</td>
-                        <td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td>
-                        <td class="col-power">2 033 921</td>
-                        <td class="col-anc-power">17 634 418</td>
                         <td class="col-pct neutral">0%</td>
                     </tr>
                     <tr class="status-red">
@@ -818,9 +829,9 @@
                         <td class="col-pct-seuil">5%</td>
                         <td class="col-tot">2</td>
                         <td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-val">1</td><td class="cell-zero">-</td><td class="cell-val">1</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td>
-                        <td class="col-power">314 093 115</td>
+                        <td class="col-power">314 119 035</td>
                         <td class="col-anc-power">314 093 115</td>
-                        <td class="col-pct neutral">0%</td>
+                        <td class="col-pct positive">+0.0%</td>
                     </tr>
                     <tr class="status-red">
                         <td class="player-name">MoDawg</td>
@@ -838,9 +849,9 @@
                         <td class="col-pct-seuil">30%</td>
                         <td class="col-tot">15</td>
                         <td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-high">6</td><td class="cell-zero">-</td><td class="cell-high">7</td><td class="cell-zero">-</td><td class="cell-val">2</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td>
-                        <td class="col-power">171 417 866</td>
+                        <td class="col-power">171 428 966</td>
                         <td class="col-anc-power">171 417 866</td>
-                        <td class="col-pct neutral">0%</td>
+                        <td class="col-pct positive">+0.0%</td>
                     </tr>
                     <tr class="status-orange">
                         <td class="player-name">Nana</td>
@@ -990,7 +1001,7 @@
                         <td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-val">3</td><td class="cell-val">3</td><td class="cell-zero">-</td><td class="cell-val">1</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-val">1</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-val">4</td><td class="cell-zero">-</td><td class="cell-zero">-</td><td class="cell-zero">-</td>
                         <td class="col-power">36 311 415</td>
                         <td class="col-anc-power">36 301 915</td>
-                        <td class="col-pct positive">+154.2%</td>
+                        <td class="col-pct positive">+0.0%</td>
                     </tr>
                     <tr class="status-red">
                         <td class="player-name">Town Drunkard</td>
@@ -1077,7 +1088,7 @@
         </div>
         
         <footer>
-            TB Chest Tracker v9.35 — FAM Clan — Total Battle<br>
+            TB Chest Tracker v9.36 — FAM Clan — Total Battle<br>
             Par Pascal & Super-Claude 🦸‍♂️
         </footer>
     </div>
